@@ -1,0 +1,74 @@
+<Window
+  xmlns="http://schemas.microsoft.com/netfx/2007/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  WindowStartupLocation="CenterScreen"
+  x:Class="Baseball.WindowMain"
+  MinHeight="240" MinWidth="320"
+  Width="800" Height="600"
+  Title="MLB Schedule"
+>
+  <Window.Background>
+    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+      <GradientStop Color="Gainsboro" Offset="0.0"/>
+      <GradientStop Color="White" Offset="1.0" />
+    </LinearGradientBrush>
+  </Window.Background>
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+    <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition />
+    </Grid.RowDefinitions>
+    <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="DarkBlue" >
+      <StackPanel.Resources>
+        <Style TargetType="Button">
+          <Setter Property="Margin" Value="1" />
+          <Setter Property="FontSize" Value="14" />
+          <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+      </StackPanel.Resources>
+      <Button>Daily Schedule</Button>
+      <Button>Schedule By Team</Button>
+    </StackPanel>
+    <Border Grid.Column="1" Grid.Row="0" CornerRadius="45">
+      <Image Source="Images\mlb_large.gif" />
+    </Border>
+    <WrapPanel Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal">
+      <WrapPanel.Resources>
+        <Style TargetType="Button">
+          <Setter Property="Margin" Value="1" />
+          <Setter Property="FontSize" Value="16" />
+          <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+      </WrapPanel.Resources>
+      <Button>FEB</Button>
+      <Button>MAR</Button>
+      <Button>APR</Button>
+      <Button>MAY</Button>
+      <Button>JUN</Button>
+      <Button>JUL</Button>
+      <Button>AUG</Button>
+      <Button>SEP</Button>
+      <Button>OCT</Button>
+    </WrapPanel>
+    <ListBox Name="lbxTeams" Grid.Column="1" Grid.Row="1" Margin="4" />
+    <GroupBox Grid.Column="0" Grid.Row="1" Margin="4" Header="Filter">
+      <StackPanel>
+        <StackPanel.Resources>
+          <Style TargetType="RadioButton">
+            <Setter Property="Margin" Value="2" />
+            <Setter Property="FontWeight" Value="Bold" />
+          </Style>
+        </StackPanel.Resources>
+        <RadioButton>All Games</RadioButton>
+        <RadioButton>Regular Season Only</RadioButton>
+        <RadioButton>Post-Season Only</RadioButton>
+        <RadioButton>Spring Training Only</RadioButton>
+      </StackPanel>
+    </GroupBox>
+  </Grid>
+</Window>
