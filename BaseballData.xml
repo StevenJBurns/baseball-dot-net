@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BaseballData>
+  <League name="American">
+    <Division name="East">
+      <Team city="Baltimore" name="Orioles">
+      </Team>
+      <Team city="Boston" name="Red Sox">        
+      </Team>
+      <Team city="New York" name="Yankees">
+      </Team>
+      <Team city="Tampa Bay" name="Devil Rays">
+      </Team>
+      <Team city="Toronto" name="Blue Jays">
+      </Team>      
+    </Division>
+    <Division name="Central">
+      <Team city="Chicago" name="White Sox">
+      </Team>
+      <Team city="Cleveland" name="Indians">
+      </Team>
+      <Team city="Deroit" name="Tigers">
+      </Team>
+      <Team city="Kansas City" name="Royals">
+      </Team>
+      <Team city="Minnesota" name="Twins">
+      </Team>
+    </Division>
+    <Division name="West">
+      <Team city="Anaheim" name="Angels">
+      </Team>
+      <Team city="Oakland" name="A's">
+      </Team>
+      <Team city="Seattle" name="Mariners">
+      </Team>
+      <Team city="Texas" name="Rangers">
+      </Team>
+    </Division>
+  </League>
+  <League name="National">
+    <Division name="East">
+      <Team city="Atlanta" name="Braves">
+      </Team>
+      <Team city="Florida" name="Marlins">
+      </Team>
+      <Team city="New York" name="Mets">
+      </Team>
+      <Team city="Philadelphia" name="Phillies">
+      </Team>
+      <Team city="Washington" name="Nationals">
+      </Team>
+    </Division>
+    <Division name="Central">
+      <Team city="Chicago" name="Cubs">
+      </Team>
+      <Team city="Cincinnati" name="Reds">
+      </Team>
+      <Team city="Houston" name="Astros">
+      </Team>
+      <Team city="Milwaukee" name="Brewers">
+      </Team>
+      <Team city="Pittsburgh" name="Pirates">
+      </Team>
+      <Team city="St Louis" name="Cardinals">
+      </Team>
+    </Division>
+    <Division name="West">
+      <Team city="Arizona" name="Diamondbacks">
+      </Team>
+      <Team city="Colorado" name="Rockies">
+      </Team>
+      <Team city="Los Angeles" name="Dodgers">
+      </Team>
+      <Team city="San Diego" name="Padres">
+      </Team>
+      <Team city="San Francisco" name="Giants">
+      </Team>
+    </Division>
+  </League>
+</BaseballData>
